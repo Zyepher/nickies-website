@@ -1,0 +1,20 @@
+{
+  "name": "nickies-website",
+  "version": "1.0.0",
+  "description": "A website built with HTML, Tailwind CSS, and JavaScript for GitHub Pages",
+  "scripts": {
+    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  },
+  "keywords": [
+    "tailwindcss",
+    "html",
+    "javascript"
+  ],
+  "author": "",
+  "license": "ISC"
+}
