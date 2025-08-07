@@ -27,20 +27,6 @@
     scroll-behavior: smooth;
   }
   
-  /* Custom scrollbar for dark mode */
-  @media (prefers-color-scheme: dark) {
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-    ::-webkit-scrollbar-track {
-      background: #1a1a1b;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: #3b2f2f;
-      border-radius: 4px;
-    }
-  }
-  
   /* Focus visible outline */
   *:focus-visible {
     outline: 2px solid var(--caramel);

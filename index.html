@@ -198,7 +198,7 @@
                     <a href="#reviews" class="text-stone-600 dark:text-stone-400 hover:text-[#c48a3a] transition">Reviews</a>
                     <a href="#faq" class="text-stone-600 dark:text-stone-400 hover:text-[#c48a3a] transition">Frequently Asked Questions</a>
                     <button id="mobile-theme-toggle" class="flex items-center space-x-2 text-stone-600 dark:text-stone-400">
-                        <span>Toggle theme</span>
+                        <span id="mobile-theme-text">Enter Dark Mode</span>
                     </button>
                     <a href="#order" class="bg-black dark:bg-white text-white dark:text-black px-6 py-2 rounded-full hover:bg-stone-800 dark:hover:bg-stone-100 transition text-center font-semibold">Order Now</a>
                 </div>
@@ -438,7 +438,7 @@
                                                     data-title="Dutch Chocolate"
                                                     data-description="Creamy Dutched cocoa with fresh milk, finished with salted caramel drizzle and Madagascar vanilla syrup. Real chocolate."
                                                     data-image="dutch-chocolate"
-                                                    data-prices='{"12oz":5,"16oz":6,"20oz":7,"500ml":11,"1L":21}'>Standard</button>
+                                                    data-prices='{"12oz":5,"16oz":7,"20oz":9,"500ml":14,"1L":27}'>Standard</button>
                                         <button class="tier-btn active px-4 py-2 rounded-full border-2 border-stone-800 dark:border-white bg-stone-800 dark:bg-white text-white dark:text-black text-sm font-semibold transition-all hover:scale-105 shadow-lg flex-1" 
                                                     data-product="chocolate" 
                                                     data-tier="premium"
@@ -775,20 +775,38 @@
         const themeToggle = document.getElementById('theme-toggle');
         const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
         
-        // Check for saved theme preference or default to system preference
+        // Check for saved theme preference or default to dark mode
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             html.classList.toggle('dark', savedTheme === 'dark');
+        } else {
+            // Default to dark mode if no saved preference
+            html.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        }
+        
+        function updateMobileThemeText() {
+            const mobileThemeText = document.getElementById('mobile-theme-text');
+            const isDark = html.classList.contains('dark');
+            mobileThemeText.textContent = isDark ? 'Enter Light Mode' : 'Enter Dark Mode';
         }
         
         function toggleTheme() {
             html.classList.toggle('dark');
             const isDark = html.classList.contains('dark');
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateMobileThemeText();
         }
         
+        // Initialize mobile theme text on page load
+        updateMobileThemeText();
+        
         themeToggle.addEventListener('click', toggleTheme);
-        mobileThemeToggle.addEventListener('click', toggleTheme);
+        mobileThemeToggle.addEventListener('click', () => {
+            toggleTheme();
+            // Collapse mobile menu after theme toggle
+            mobileMenu.classList.add('hidden');
+        });
         
         // Mobile menu toggle
         const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
