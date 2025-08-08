@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A website built with HTML, Tailwind CSS, and JavaScript for GitHub Pages",
   "scripts": {
-    "build-css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    "build-css": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --minify",
+    "watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch",
+    "dev": "tailwindcss -i ./assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.17"

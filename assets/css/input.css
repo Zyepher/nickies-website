@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Crimson Pro font class */
+@layer components {
+  .crimson-pro-logo {
+    font-family: "Crimson Pro", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.1em;
+  }
+}
+
+/* Custom CSS styles from the original index.html */
+@layer base {
+  :root {
+    --bg-light: #f7f7f5;
+    --bg-dark: #0b0b0c;
+    --caramel: #c48a3a;
+    --espresso: #3b2f2f;
+  }
+  
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Focus visible outline */
+  *:focus-visible {
+    outline: 2px solid var(--caramel);
+    outline-offset: 2px;
+  }
+}

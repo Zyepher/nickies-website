@@ -34,30 +34,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/x-icon" href="./src/favicon_io/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/favicon_io/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/icons/apple-touch-icon.png">
     <!-- Manifest disabled for local file:// testing to avoid CORS errors -->
     <!-- <link rel="manifest" href="./site.webmanifest"> -->
-    <link rel="shortcut icon" href="./src/favicon_io/favicon.ico">
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.ico">
     <meta name="theme-color" content="#ffffff">
     
     <!-- Set theme-color immediately to prevent flash -->
-    <script>
-        (function() {
-            const savedTheme = localStorage.getItem('theme');
-            const isDark = savedTheme ? savedTheme === 'dark' : true; // Default to dark
-            document.querySelector('meta[name="theme-color"]').content = isDark ? '#000000' : '#ffffff';
-            // Also set dark class on html element early
-            if (isDark) {
-                document.documentElement.classList.add('dark');
-            }
-        })();
-    </script>
+    <script src="./assets/js/theme.js"></script>
     
     <!-- Tailwind CSS - Local Build -->
-    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="./assets/css/output.css">
     
     <!-- For development only - Uncomment to use CDN -->
     <!-- <script src="https://cdn.tailwindcss.com/3.4.17"></script> -->
@@ -412,7 +402,7 @@
                             <div class="min-[456px]:hidden flex flex-col">
                                 <!-- Product Image -->
                                 <div class="w-full h-80 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 dark:from-black dark:via-gray-900 dark:to-black flex items-center justify-center">
-                                    <img id="coffee-image-mobile" src="./src/beverages/classic-coffee.svg" alt="Coffee" class="h-80 w-auto object-contain drop-shadow-2xl transition">
+                                    <img id="coffee-image-mobile" src="./assets/images/beverages/classic-coffee.svg" alt="Coffee" class="h-80 w-auto object-contain drop-shadow-2xl transition">
                                 </div>
                                 
                                 <!-- Product Info -->
@@ -490,7 +480,7 @@
                                 <div class="flex items-stretch">
                                     <!-- Image Section -->
                                     <div class="w-[30%] min-[456px]:w-[33%] lg:w-[35%] bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 dark:from-black dark:via-gray-900 dark:to-black">
-                                        <img id="coffee-image" src="./src/beverages/classic-coffee.svg" alt="Coffee" class="w-full h-auto block drop-shadow-2xl transition">
+                                        <img id="coffee-image" src="./assets/images/beverages/classic-coffee.svg" alt="Coffee" class="w-full h-auto block drop-shadow-2xl transition">
                                     </div>
                                     
                                     <!-- Product Info Section -->
@@ -576,7 +566,7 @@
                             <div class="min-[456px]:hidden flex flex-col">
                                 <!-- Product Image -->
                                 <div class="w-full h-80 bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 dark:from-black dark:via-gray-900 dark:to-black flex items-center justify-center">
-                                    <img id="chocolate-image-mobile" src="./src/beverages/dutch-chocolate.svg" alt="Chocolate" class="h-80 w-auto object-contain drop-shadow-2xl transition">
+                                    <img id="chocolate-image-mobile" src="./assets/images/beverages/dutch-chocolate.svg" alt="Chocolate" class="h-80 w-auto object-contain drop-shadow-2xl transition">
                                 </div>
                                 
                                 <!-- Product Info -->
@@ -654,7 +644,7 @@
                                 <div class="flex items-stretch">
                                     <!-- Image Section -->
                                     <div class="w-[30%] min-[456px]:w-[33%] lg:w-[35%] bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 dark:from-black dark:via-gray-900 dark:to-black">
-                                        <img id="chocolate-image" src="./src/beverages/dutch-chocolate.svg" alt="Chocolate" class="w-full h-auto block drop-shadow-2xl transition">
+                                        <img id="chocolate-image" src="./assets/images/beverages/dutch-chocolate.svg" alt="Chocolate" class="w-full h-auto block drop-shadow-2xl transition">
                                     </div>
                                     
                                     <!-- Product Info Section -->
@@ -883,16 +873,16 @@
     <!-- Footer -->
     <footer class="bg-white dark:bg-black border-t border-stone-200 dark:border-stone-900">
         <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="py-20">
+            <div class="py-16">
                 <!-- Main Footer Content -->
-                <div class="flex flex-col md:flex-row md:justify-between space-y-8 md:space-y-0">
+                <div class="flex flex-col md:flex-row md:justify-between space-y-6 md:space-y-0">
                     <!-- Brand Column -->
                     <div>
                         <h3 class="text-2xl font-bold text-stone-900 dark:text-white mb-3 crimson-pro-logo">NICKIES</h3>
                         <p class="text-stone-900 dark:text-stone-400 max-w-sm leading-relaxed">
                             Exceptional taste. Flexible pricing. Fast service.
                         </p>
-                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 my-6 hidden md:block"></div>
+                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-3 hidden md:block"></div>
                         <div class="space-y-2 hidden md:block">
                             <p class="text-sm text-stone-500 dark:text-stone-500">
                                 Company registration no: 202403061140 (PG0553214-V)
@@ -905,8 +895,8 @@
                     
                     <!-- Contact Column -->
                     <div class="md:w-auto">
-                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-6 md:hidden"></div>
-                        <h4 class="text-sm font-semibold text-stone-900 dark:text-white uppercase tracking-wider mb-4">Contact</h4>
+                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-3 md:hidden"></div>
+                        <h4 class="text-sm font-semibold text-stone-900 dark:text-white uppercase tracking-wider mt-6 mb-4 md:mt-0">Contact</h4>
                         <ul class="space-y-0">
                             <li>
                                 <a href="mailto:nikfadhil1996@gmail.com" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base font-medium text-stone-600 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">
@@ -937,8 +927,8 @@
                     
                     <!-- Company Info (Mobile only - appears after contact) -->
                     <div class="md:hidden">
-                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-6"></div>
-                        <div class="space-y-2">
+                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-3"></div>
+                        <div class="space-y-2 mt-6">
                             <p class="text-sm text-stone-500 dark:text-stone-500">
                                 Company registration no: 202403061140 (PG0553214-V)
                             </p>
@@ -998,7 +988,12 @@
     </div>
     
     <!-- JavaScript -->
-    <script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/products.js"></script>
+    <script src="./assets/js/media-viewer.js"></script>
+    
+    <!-- Inline script removed - now in separate files -->
+    <script style="display: none;">
         // Dark mode toggle
         const html = document.documentElement;
         const themeToggle = document.getElementById('theme-toggle');
@@ -1190,21 +1185,21 @@
                 if (product === 'coffee') {
                     switch(tier) {
                         case 'standard':
-                                image.src = './src/beverages/classic-coffee.svg';
+                                image.src = './assets/images/beverages/classic-coffee.svg';
                                 title.textContent = 'Classic Coffee';
                                 description.innerHTML = "Local coffee beans brewed strong using<br>traditional way, with full cream milk and<br>condensed milk. It's a timeless classic.";
                                 tierBadge.textContent = 'Standard';
                                 tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-700 text-stone-700 dark:text-stone-300 rounded-full text-xs font-bold uppercase tracking-wider';
                                 break;
                         case 'premium':
-                                image.src = './src/beverages/caffe-latte.svg';
+                                image.src = './assets/images/beverages/caffe-latte.svg';
                                 title.textContent = 'Caffè Latte';
                                 description.innerHTML = 'Precisely extracted espresso shots with<br>fresh milk, unsweetened. Aromatic flavor<br>with a silky finish. For true coffee lovers.';
                                 tierBadge.textContent = 'Premium';
                                 tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider';
                                 break;
                         case 'luxury':
-                                image.src = './src/beverages/caramel-macchiato.svg';
+                                image.src = './assets/images/beverages/caramel-macchiato.svg';
                                 title.textContent = 'Caramel Macchiato';
                                 tierBadge.textContent = 'Luxury';
                                 tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-700 dark:text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider';
@@ -1214,21 +1209,21 @@
                 } else if (product === 'chocolate') {
                     switch(tier) {
                         case 'standard':
-                                image.src = './src/beverages/dutch-chocolate.svg';
+                                image.src = './assets/images/beverages/dutch-chocolate.svg';
                                 title.textContent = 'Dutch Chocolate';
                                 description.innerHTML = 'Creamy Dutched cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Real chocolate.';
                                 tierBadge.textContent = 'Standard';
                                 tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-700 text-stone-700 dark:text-stone-300 rounded-full text-xs font-bold uppercase tracking-wider';
                                 break;
                         case 'premium':
-                                image.src = './src/beverages/belgian-chocolate.svg';
+                                image.src = './assets/images/beverages/belgian-chocolate.svg';
                                 title.textContent = 'Belgian Chocolate';
                                 description.innerHTML = 'European dark-red cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Most beloved.';
                                 tierBadge.textContent = 'Premium';
                                 tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider';
                                 break;
                         case 'luxury':
-                                image.src = './src/beverages/valrhona-chocolate.svg';
+                                image.src = './assets/images/beverages/valrhona-chocolate.svg';
                                 title.textContent = 'Valrhona Chocolate';
                                 description.innerHTML = 'Renowned French cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Special treat.';
                                 tierBadge.textContent = 'Luxury';
@@ -1289,14 +1284,14 @@
                 const descriptionMobile = card.querySelector('#coffee-description-mobile');
                 const tierBadgeMobile = card.querySelector('#coffee-tier-badge-mobile');
                 
-                if (image) image.src = './src/beverages/caramel-macchiato.svg';
+                if (image) image.src = './assets/images/beverages/caramel-macchiato.svg';
                 if (title) title.textContent = 'Caramel Macchiato';
                 if (description) description.innerHTML = 'Dark smoky arabica espresso shots with<br>fresh milk, finished with caramel drizzle<br>and Madagascar vanilla syrup. Signature.';
                 if (tierBadge) {
                     tierBadge.textContent = 'Luxury';
                     tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-700 dark:text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider';
                 }
-                if (imageMobile) imageMobile.src = './src/beverages/caramel-macchiato.svg';
+                if (imageMobile) imageMobile.src = './assets/images/beverages/caramel-macchiato.svg';
                 if (titleMobile) titleMobile.textContent = 'Caramel Macchiato';
                 if (descriptionMobile) descriptionMobile.innerHTML = 'Dark smoky arabica espresso shots with<br>fresh milk, finished with caramel drizzle<br>and Madagascar vanilla syrup. Signature.';
                 if (tierBadgeMobile) {
@@ -1321,14 +1316,14 @@
                 const descriptionMobile = card.querySelector('#chocolate-description-mobile');
                 const tierBadgeMobile = card.querySelector('#chocolate-tier-badge-mobile');
                 
-                if (image) image.src = './src/beverages/belgian-chocolate.svg';
+                if (image) image.src = './assets/images/beverages/belgian-chocolate.svg';
                 if (title) title.textContent = 'Belgian Chocolate';
                 if (description) description.innerHTML = 'European dark-red cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Most beloved.';
                 if (tierBadge) {
                     tierBadge.textContent = 'Premium';
                     tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider';
                 }
-                if (imageMobile) imageMobile.src = './src/beverages/belgian-chocolate.svg';
+                if (imageMobile) imageMobile.src = './assets/images/beverages/belgian-chocolate.svg';
                 if (titleMobile) titleMobile.textContent = 'Belgian Chocolate';
                 if (descriptionMobile) descriptionMobile.innerHTML = 'European dark-red cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Most beloved.';
                 if (tierBadgeMobile) {
@@ -1390,15 +1385,15 @@
         
         // Media sources array with type indicators
         const mediaSources = [
-            { type: 'image', src: './src/reviews/grid-img-1.jpeg', alt: 'Customer review 1' },
-            { type: 'video', src: './src/reviews/grid-vid-1.mov', alt: 'Customer review video', poster: './src/reviews/grid-img-1.jpeg' },
-            { type: 'image', src: './src/reviews/grid-img-2.jpeg', alt: 'Customer review 2' },
-            { type: 'image', src: './src/reviews/grid-img-3.jpeg', alt: 'Customer review 3' },
-            { type: 'image', src: './src/reviews/grid-img-1.jpeg', alt: 'Customer review 4' },
-            { type: 'image', src: './src/reviews/grid-img-2.jpeg', alt: 'Customer review 5' },
-            { type: 'image', src: './src/reviews/grid-img-3.jpeg', alt: 'Customer review 6' },
-            { type: 'image', src: './src/reviews/grid-img-1.jpeg', alt: 'Customer review 7' },
-            { type: 'image', src: './src/reviews/grid-img-2.jpeg', alt: 'Customer review 8' }
+            { type: 'image', src: './assets/images/reviews/grid-img-1.jpeg', alt: 'Customer review 1' },
+            { type: 'video', src: './assets/images/reviews/grid-vid-1.mov', alt: 'Customer review video', poster: './assets/images/reviews/grid-img-1.jpeg' },
+            { type: 'image', src: './assets/images/reviews/grid-img-2.jpeg', alt: 'Customer review 2' },
+            { type: 'image', src: './assets/images/reviews/grid-img-3.jpeg', alt: 'Customer review 3' },
+            { type: 'image', src: './assets/images/reviews/grid-img-1.jpeg', alt: 'Customer review 4' },
+            { type: 'image', src: './assets/images/reviews/grid-img-2.jpeg', alt: 'Customer review 5' },
+            { type: 'image', src: './assets/images/reviews/grid-img-3.jpeg', alt: 'Customer review 6' },
+            { type: 'image', src: './assets/images/reviews/grid-img-1.jpeg', alt: 'Customer review 7' },
+            { type: 'image', src: './assets/images/reviews/grid-img-2.jpeg', alt: 'Customer review 8' }
         ];
         
         // Create Instagram-style video play icon SVG
