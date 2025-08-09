@@ -165,12 +165,12 @@
         }
     </style>
 </head>
-<body class="bg-white dark:bg-black text-stone-900 dark:text-stone-100 font-sans transition pt-16">
+<body class="bg-stone-50 dark:bg-black text-stone-900 dark:text-stone-100 font-sans transition pt-16">
     <!-- Skip to content link for accessibility -->
     <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#c48a3a] text-white px-4 py-2 rounded-lg">Skip to content</a>
     
     <!-- Fixed Navigation -->
-    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black border-b border-stone-200 dark:border-stone-900 transition">
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm dark:bg-black border-b border-stone-200/80 dark:border-stone-900 transition">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8" role="navigation" aria-label="Main navigation">
             <div class="flex items-center justify-between h-16">
                 <!-- Logo -->
@@ -178,12 +178,12 @@
                 
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center">
-                    <a href="#beverages" class="px-4 py-2 rounded-full text-sm font-medium text-stone-600 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">Menu</a>
+                    <a href="#beverages" class="px-4 py-2 rounded-full text-sm font-medium text-stone-600 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors">Menu</a>
                     <a href="#reviews" class="px-4 py-2 rounded-full text-sm font-medium text-stone-600 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">Reviews</a>
                     <a href="#faq" class="px-4 py-2 rounded-full text-sm font-medium text-stone-600 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">Frequently Asked Questions</a>
                     
                     <!-- Theme Toggle -->
-                    <button id="theme-toggle" class="p-2 ml-5 mr-5 rounded-lg hover:bg-stone-200 dark:hover:bg-stone-800 transition border border-stone-200 dark:border-stone-800" aria-label="Toggle dark mode">
+                    <button id="theme-toggle" class="p-2 ml-5 mr-5 rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition border border-stone-200/60 dark:border-stone-800" aria-label="Toggle dark mode">
                         <svg class="w-5 h-5 block dark:hidden transition" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path>
                         </svg>
@@ -195,7 +195,7 @@
                     <a href="https://wa.me/60173609675?text=Hi%20Nickies!" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       class="bg-black dark:bg-white text-white dark:text-black px-5 py-2 rounded-full hover:bg-stone-800 dark:hover:bg-stone-100 transition font-semibold text-sm inline-flex items-center">
+                       class="bg-stone-900 dark:bg-white text-white dark:text-black px-5 py-2 rounded-full hover:bg-stone-800 dark:hover:bg-stone-100 transition font-semibold text-sm inline-flex items-center shadow-sm hover:shadow-md">
                         <svg class="w-3.5 h-3.5 mr-2" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -204,7 +204,7 @@
                 </div>
                 
                 <!-- Mobile menu button -->
-                <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-stone-200 dark:hover:bg-stone-800 transition" aria-label="Toggle mobile menu">
+                <button id="mobile-menu-toggle" class="md:hidden p-2 rounded-lg hover:bg-stone-100 dark:hover:bg-stone-800 transition" aria-label="Toggle mobile menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -215,10 +215,10 @@
     </header>
     
     <!-- Mobile Sidebar -->
-    <div id="mobile-sidebar" class="fixed inset-y-0 left-0 w-80 bg-white dark:bg-black transform -translate-x-full transition-transform duration-300 ease-in-out z-40 border-r border-stone-200 dark:border-stone-800">
+    <div id="mobile-sidebar" class="fixed inset-y-0 left-0 w-80 bg-white/95 backdrop-blur-sm dark:bg-black transform -translate-x-full transition-transform duration-300 ease-in-out z-40 border-r border-stone-200/80 dark:border-stone-800">
         <div class="mt-20 p-0">
             <!-- Menu -->
-            <a href="#beverages" class="mobile-nav-item flex items-center py-3 px-8 text-sm font-semibold text-stone-800 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
+            <a href="#beverages" class="mobile-nav-item flex items-center py-3 px-8 text-sm font-semibold text-stone-700 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
                 <div class="w-7 h-7 rounded bg-white dark:bg-black border border-stone-300 dark:border-stone-700 flex items-center justify-center mr-3 transition-colors group-hover:border-stone-500 dark:group-hover:border-stone-400">
                     <svg class="w-4 h-4 opacity-90 group-hover:opacity-100" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
@@ -228,7 +228,7 @@
             </a>
             
             <!-- Reviews -->
-            <a href="#reviews" class="mobile-nav-item flex items-center py-3 px-8 text-sm font-semibold text-stone-800 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
+            <a href="#reviews" class="mobile-nav-item flex items-center py-3 px-8 text-sm font-semibold text-stone-700 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
                 <div class="w-7 h-7 rounded bg-white dark:bg-black border border-stone-300 dark:border-stone-700 flex items-center justify-center mr-3 transition-colors group-hover:border-stone-500 dark:group-hover:border-stone-400">
                     <svg class="w-4 h-4 opacity-90 group-hover:opacity-100" fill="currentColor" viewBox="0 0 20 20">
                         <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
@@ -238,7 +238,7 @@
             </a>
             
             <!-- FAQ -->
-            <a href="#faq" class="mobile-nav-item flex items-center py-3 px-8 text-sm font-semibold text-stone-800 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
+            <a href="#faq" class="mobile-nav-item flex items-center py-3 px-8 text-sm font-semibold text-stone-700 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
                 <div class="w-7 h-7 rounded bg-white dark:bg-black border border-stone-300 dark:border-stone-700 flex items-center justify-center mr-3 transition-colors group-hover:border-stone-500 dark:group-hover:border-stone-400">
                     <svg class="w-4 h-4 opacity-90 group-hover:opacity-100" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path>
@@ -248,7 +248,7 @@
             </a>
             
             <!-- Theme Toggle -->
-            <button id="mobile-theme-toggle" class="w-full flex items-center py-3 px-8 text-sm font-semibold text-stone-800 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
+            <button id="mobile-theme-toggle" class="w-full flex items-center py-3 px-8 text-sm font-semibold text-stone-700 dark:text-[rgb(160,160,160)] hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors group">
                 <div class="w-7 h-7 rounded bg-white dark:bg-black border border-stone-300 dark:border-stone-700 flex items-center justify-center mr-3 transition-colors group-hover:border-stone-500 dark:group-hover:border-stone-400">
                     <svg class="w-4 h-4 opacity-90 group-hover:opacity-100 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
                         <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
@@ -261,14 +261,14 @@
             </button>
             
             <!-- Divider -->
-            <div class="mx-8 my-4 border-t border-stone-200 dark:border-stone-800"></div>
+            <div class="mx-8 my-4 border-t border-stone-200/60 dark:border-stone-800"></div>
             
             <!-- Order Now Button -->
             <div class="px-8">
                 <a href="https://wa.me/60173609675?text=Hi%20Nickies!" 
                    target="_blank" 
                    rel="noopener noreferrer"
-                   class="flex items-center justify-center bg-black dark:bg-white text-white dark:text-black px-6 py-3 rounded-full hover:bg-stone-800 dark:hover:bg-stone-100 transition font-semibold text-sm">
+                   class="flex items-center justify-center bg-stone-900 dark:bg-white text-white dark:text-black px-6 py-3 rounded-full hover:bg-stone-800 dark:hover:bg-stone-100 transition font-semibold text-sm shadow-sm hover:shadow-md">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                     </svg>
@@ -283,7 +283,7 @@
     
     <main id="main">
         <!-- Hero Section -->
-        <section class="relative overflow-hidden py-20 sm:py-28 md:py-32 bg-white dark:bg-black">
+        <section class="relative overflow-hidden py-20 sm:py-28 md:py-32 bg-gradient-to-b from-stone-50 to-white dark:from-black dark:to-black">
             <!-- Background Pattern -->
             <div class="absolute inset-0 opacity-[0.015] dark:opacity-[0.02]">
                 <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23c48a3a" fill-opacity="1"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -302,7 +302,7 @@
                         <span class="inline-block bg-[#ff0033] text-white text-sm min-[391px]:text-base min-[456px]:text-lg sm:text-xl lg:text-2xl px-3 min-[391px]:px-3.5 min-[456px]:px-4 py-1.5 min-[391px]:py-1.5 min-[456px]:py-2 rounded-md font-bold tracking-wider">Premium</span>
                     </div>
                     <div class="flex flex-row gap-2 min-[391px]:gap-2.5 min-[456px]:gap-3 sm:gap-4 md:gap-6 justify-center">
-                        <a href="#beverages" class="group bg-black dark:bg-white text-white dark:text-black px-4 min-[391px]:px-5 min-[456px]:px-6 sm:px-10 py-2.5 min-[391px]:py-3 min-[456px]:py-3.5 sm:py-4 md:py-5 rounded-full text-xs min-[391px]:text-sm min-[456px]:text-sm sm:text-lg font-medium hover:bg-stone-800 dark:hover:bg-stone-100 hover:shadow-2xl transform hover:-translate-y-1 transition inline-flex items-center justify-center">
+                        <a href="#beverages" class="group bg-stone-900 dark:bg-white text-white dark:text-black px-4 min-[391px]:px-5 min-[456px]:px-6 sm:px-10 py-2.5 min-[391px]:py-3 min-[456px]:py-3.5 sm:py-4 md:py-5 rounded-full text-xs min-[391px]:text-sm min-[456px]:text-sm sm:text-lg font-medium hover:bg-stone-800 dark:hover:bg-stone-100 hover:shadow-2xl transform hover:-translate-y-1 transition inline-flex items-center justify-center">
                             <svg class="w-4 h-4 min-[391px]:w-4 min-[391px]:h-4 sm:w-5 sm:h-5 mr-1.5 min-[391px]:mr-1.5 sm:mr-2 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
                             </svg>
@@ -387,7 +387,7 @@
         </section>
         
         <!-- Beverages Section -->
-        <section id="beverages" class="relative overflow-hidden py-24 sm:py-32 bg-white dark:bg-[rgb(10,10,11)]">
+        <section id="beverages" class="relative overflow-hidden py-24 sm:py-32 bg-stone-50 dark:bg-[rgb(10,10,11)]">
             <div class="container mx-auto px-4 min-[456px]:px-2 min-[456px]:px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold mb-4">Our Beverages</h2>
@@ -396,7 +396,7 @@
                 
                 <div class="flex flex-col lg:flex-row lg:justify-between gap-8 sm:gap-12 md:gap-12 lg:gap-6 max-w-6xl mx-auto px-0 xl:px-8">
                     <!-- Coffee Line Card -->
-                    <div class="beverage-card coffee-line bg-white dark:bg-[rgb(20,20,22)] rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition border border-stone-200 dark:border-stone-800 w-full min-[456px]:w-[456px] sm:w-[504px] md:w-[504px] lg:w-full lg:max-w-2xl mx-auto lg:mx-0">
+                    <div class="beverage-card coffee-line bg-white dark:bg-[rgb(20,20,22)] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition border border-stone-200/60 dark:border-stone-800 w-full min-[456px]:w-[456px] sm:w-[504px] md:w-[504px] lg:w-full lg:max-w-2xl mx-auto lg:mx-0">
                         <div class="flex flex-col">
                             <!-- Mobile Vertical Layout (below 456px) -->
                             <div class="min-[456px]:hidden flex flex-col">
@@ -458,7 +458,7 @@
                                 </div>
                                 
                                 <!-- Separator -->
-                                <div class="border-t border-stone-200 dark:border-stone-800"></div>
+                                <div class="border-t border-stone-200/60 dark:border-stone-800"></div>
                                 
                                 <!-- Price and Order -->
                                 <div class="px-4 py-5">
@@ -560,7 +560,7 @@
                     </div>
 
                     <!-- Chocolate Line Card -->
-                    <div class="beverage-card chocolate-line bg-white dark:bg-[rgb(20,20,22)] rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition border border-stone-200 dark:border-stone-800 w-full min-[456px]:w-[456px] sm:w-[504px] md:w-[504px] lg:w-full lg:max-w-2xl mx-auto lg:mx-0">
+                    <div class="beverage-card chocolate-line bg-white dark:bg-[rgb(20,20,22)] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition border border-stone-200/60 dark:border-stone-800 w-full min-[456px]:w-[456px] sm:w-[504px] md:w-[504px] lg:w-full lg:max-w-2xl mx-auto lg:mx-0">
                         <div class="flex flex-col">
                             <!-- Mobile Vertical Layout (below 456px) -->
                             <div class="min-[456px]:hidden flex flex-col">
@@ -622,7 +622,7 @@
                                 </div>
                                 
                                 <!-- Separator -->
-                                <div class="border-t border-stone-200 dark:border-stone-800"></div>
+                                <div class="border-t border-stone-200/60 dark:border-stone-800"></div>
                                 
                                 <!-- Price and Order -->
                                 <div class="px-4 py-5">
@@ -727,7 +727,7 @@
         </section>
         
         <!-- Reviews Section - Instagram Grid -->
-        <section id="reviews" class="py-20 bg-white dark:bg-black">
+        <section id="reviews" class="py-20 bg-gradient-to-b from-white to-stone-50 dark:from-black dark:to-black">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl sm:text-4xl font-bold mb-4">Reviews</h2>
@@ -758,7 +758,7 @@
         </section>
 
         <!-- Recipe Transparency -->
-        <section id="faq" class="relative overflow-hidden py-24 sm:py-32 bg-white dark:bg-[rgb(10,10,11)]">
+        <section id="faq" class="relative overflow-hidden py-24 sm:py-32 bg-stone-50 dark:bg-[rgb(10,10,11)]">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-3xl mx-auto">
                     <div class="text-center mb-8">
@@ -768,15 +768,15 @@
                     <!-- Collapsible FAQ Panels -->
                     <div class="space-y-4">
                         <!-- FAQ 1: Shelf Life -->
-                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800">
-                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
+                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-stone-200/60 dark:border-stone-800">
+                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50/70 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
                                 <span class="text-base sm:text-lg md:text-xl font-semibold">What's the shelf life?</span>
                                 <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div class="faq-content hidden">
-                                <div class="border-t border-stone-200 dark:border-stone-800"></div>
+                                <div class="border-t border-stone-200/60 dark:border-stone-800"></div>
                                 <div class="px-6 py-4">
                                     <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed">Our beverages stay fresh for 5-7 days when kept refrigerated. We recommend consuming within 3 days for optimal taste.</p>
                                 </div>
@@ -784,15 +784,15 @@
                         </div>
 
                         <!-- FAQ 2: Sweetness Level -->
-                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800">
-                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
+                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-stone-200/60 dark:border-stone-800">
+                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50/70 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
                                 <span class="text-base sm:text-lg md:text-xl font-semibold">Can I adjust the sweetness level?</span>
                                 <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div class="faq-content hidden">
-                                <div class="border-t border-stone-200 dark:border-stone-800"></div>
+                                <div class="border-t border-stone-200/60 dark:border-stone-800"></div>
                                 <div class="px-6 py-4">
                                     <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed">Currently, our formulas are pre-set at ~7.5% sugar content. We're working on customizable options for future releases.</p>
                                 </div>
@@ -800,15 +800,15 @@
                         </div>
 
                         <!-- FAQ 3: Bean Source -->
-                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800">
-                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
+                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-stone-200/60 dark:border-stone-800">
+                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50/70 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
                                 <span class="text-base sm:text-lg md:text-xl font-semibold">Where do you source your beans?</span>
                                 <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div class="faq-content hidden">
-                                <div class="border-t border-stone-200 dark:border-stone-800"></div>
+                                <div class="border-t border-stone-200/60 dark:border-stone-800"></div>
                                 <div class="px-6 py-4">
                                     <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed">We use specialty-grade Arabica beans from rotating single origins, roasted weekly to highlight natural sweetness and complexity.</p>
                                 </div>
@@ -816,15 +816,15 @@
                         </div>
 
                         <!-- FAQ 5: Delivery Areas -->
-                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-2xl border border-stone-200 dark:border-stone-800">
-                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
+                        <div class="bg-white dark:bg-[rgb(20,20,22)] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-stone-200/60 dark:border-stone-800">
+                            <button class="faq-toggle w-full px-6 py-4 flex items-center justify-between hover:bg-stone-50/70 dark:hover:bg-[rgb(28,28,30)] transition text-left" aria-expanded="false">
                                 <span class="text-base sm:text-lg md:text-xl font-semibold">What areas do you deliver to?</span>
                                 <svg class="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                                 </svg>
                             </button>
                             <div class="faq-content hidden">
-                                <div class="border-t border-stone-200 dark:border-stone-800"></div>
+                                <div class="border-t border-stone-200/60 dark:border-stone-800"></div>
                                 <div class="px-6 py-4">
                                     <p class="text-sm sm:text-base text-stone-600 dark:text-stone-400 leading-relaxed">We deliver to all areas covered by Freezed's cold-chain network. Check your eligibility during checkout.</p>
                                 </div>
@@ -849,7 +849,7 @@
                     <a href="https://wa.me/60173609675?text=Hi%20Nickies!" 
                        target="_blank" 
                        rel="noopener noreferrer"
-                       class="group inline-flex items-center bg-black dark:bg-white text-white dark:text-black px-3 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 rounded-full text-xs sm:text-base md:text-lg font-medium hover:bg-stone-800 dark:hover:bg-stone-100 hover:shadow-2xl transform hover:-translate-y-1 transition">
+                       class="group inline-flex items-center bg-stone-900 dark:bg-white text-white dark:text-black px-3 sm:px-6 md:px-8 lg:px-10 py-2.5 sm:py-3 md:py-4 rounded-full text-xs sm:text-base md:text-lg font-medium hover:bg-stone-800 dark:hover:bg-stone-100 hover:shadow-2xl transform hover:-translate-y-1 transition">
                         <svg class="w-4 h-4 sm:w-5 sm:h-5 mr-1.5 sm:mr-2 md:mr-2.5" fill="currentColor" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5">
                             <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
                         </svg>
@@ -871,7 +871,7 @@
     </main>
     
     <!-- Footer -->
-    <footer class="bg-white dark:bg-black border-t border-stone-200 dark:border-stone-900">
+    <footer class="bg-white/95 backdrop-blur-sm dark:bg-black border-t border-stone-200/80 dark:border-stone-900">
         <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="py-16">
                 <!-- Main Footer Content -->
@@ -879,10 +879,10 @@
                     <!-- Brand Column -->
                     <div>
                         <h3 class="text-2xl font-bold text-stone-900 dark:text-white mb-3 crimson-pro-logo">NICKIES</h3>
-                        <p class="text-stone-900 dark:text-stone-400 max-w-sm leading-relaxed">
+                        <p class="text-stone-700 dark:text-stone-400 max-w-sm leading-relaxed">
                             Exceptional taste. Flexible pricing. Fast service.
                         </p>
-                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mt-5 mb-5 hidden md:block"></div>
+                        <div class="w-12 h-px bg-stone-200 dark:bg-stone-900 mt-5 mb-5 hidden md:block"></div>
                         <div class="space-y-2 hidden md:block">
                             <p class="text-sm text-stone-500 dark:text-stone-500">
                                 Company registration no: 202403061140 (PG0553214-V)
@@ -895,11 +895,11 @@
                     
                     <!-- Contact Column -->
                     <div class="md:w-auto">
-                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-3 md:hidden"></div>
+                        <div class="w-12 h-px bg-stone-200 dark:bg-stone-900 mb-3 md:hidden"></div>
                         <h4 class="text-sm font-semibold text-stone-900 dark:text-white uppercase tracking-wider mt-6 mb-4 md:mt-0">Contact</h4>
                         <ul class="space-y-0">
                             <li>
-                                <a href="mailto:nikfadhil1996@gmail.com" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base font-medium text-stone-900 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">
+                                <a href="mailto:nikfadhil1996@gmail.com" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base text-stone-700 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors">
                                     <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                     </svg>
@@ -907,7 +907,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://wa.me/60173609675?text=Hi%20Nickies!" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base font-medium text-stone-900 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">
+                                <a href="https://wa.me/60173609675?text=Hi%20Nickies!" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base text-stone-700 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors">
                                     <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                                     </svg>
@@ -915,7 +915,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://instagram.com/nickies.co" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base font-medium text-stone-900 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100 dark:hover:bg-[rgb(28,28,28)] transition-colors">
+                                <a href="https://instagram.com/nickies.co" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 -mx-4 rounded-full text-base text-stone-700 dark:text-stone-400 hover:text-stone-900 dark:hover:text-white hover:bg-stone-100/70 dark:hover:bg-[rgb(28,28,28)] transition-colors">
                                     <svg class="w-5 h-5 mr-3" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z"/>
                                     </svg>
@@ -927,7 +927,7 @@
                     
                     <!-- Company Info (Mobile only - appears after contact) -->
                     <div class="md:hidden">
-                        <div class="w-12 h-px bg-stone-300 dark:bg-stone-900 mb-3"></div>
+                        <div class="w-12 h-px bg-stone-200 dark:bg-stone-900 mb-3"></div>
                         <div class="space-y-2 mt-6">
                             <p class="text-sm text-stone-500 dark:text-stone-500">
                                 Company registration no: 202403061140 (PG0553214-V)
