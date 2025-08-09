@@ -77,21 +77,21 @@ tierBtns.forEach(btn => {
         if (product === 'coffee') {
             switch(tier) {
                 case 'standard':
-                        image.src = './assets/images/beverages/classic-coffee.svg';
+                        image.src = './assets/images/beverages/classic-coffee.png';
                         title.textContent = 'Classic Coffee';
                         description.innerHTML = "Local coffee beans brewed strong using<br>traditional way, with full cream milk and<br>condensed milk. It's a timeless classic.";
                         tierBadge.textContent = 'Standard';
                         tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-700 text-stone-700 dark:text-stone-300 rounded-full text-xs font-bold uppercase tracking-wider';
                         break;
                 case 'premium':
-                        image.src = './assets/images/beverages/caffe-latte.svg';
+                        image.src = './assets/images/beverages/caffe-latte.png';
                         title.textContent = 'Caffè Latte';
                         description.innerHTML = 'Precisely extracted espresso shots with<br>fresh milk, unsweetened. Aromatic flavor<br>with a silky finish. For true coffee lovers.';
                         tierBadge.textContent = 'Premium';
                         tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider';
                         break;
                 case 'luxury':
-                        image.src = './assets/images/beverages/caramel-macchiato.svg';
+                        image.src = './assets/images/beverages/caramel-macchiato.png';
                         title.textContent = 'Caramel Macchiato';
                         tierBadge.textContent = 'Luxury';
                         tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-700 dark:text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider';
@@ -101,21 +101,21 @@ tierBtns.forEach(btn => {
         } else if (product === 'chocolate') {
             switch(tier) {
                 case 'standard':
-                        image.src = './assets/images/beverages/dutch-chocolate.svg';
+                        image.src = './assets/images/beverages/nickies-chocolate.png';
                         title.textContent = 'Dutch Chocolate';
                         description.innerHTML = 'Creamy Dutched cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Real chocolate.';
                         tierBadge.textContent = 'Standard';
                         tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-700 text-stone-700 dark:text-stone-300 rounded-full text-xs font-bold uppercase tracking-wider';
                         break;
                 case 'premium':
-                        image.src = './assets/images/beverages/belgian-chocolate.svg';
+                        image.src = './assets/images/beverages/nickies-chocolate.png';
                         title.textContent = 'Belgian Chocolate';
                         description.innerHTML = 'European dark-red cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Most beloved.';
                         tierBadge.textContent = 'Premium';
                         tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider';
                         break;
                 case 'luxury':
-                        image.src = './assets/images/beverages/valrhona-chocolate.svg';
+                        image.src = './assets/images/beverages/nickies-chocolate.png';
                         title.textContent = 'Valrhona Chocolate';
                         description.innerHTML = 'Renowned French cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Special treat.';
                         tierBadge.textContent = 'Luxury';
@@ -176,14 +176,14 @@ document.querySelectorAll('.beverage-card').forEach(card => {
         const descriptionMobile = card.querySelector('#coffee-description-mobile');
         const tierBadgeMobile = card.querySelector('#coffee-tier-badge-mobile');
         
-        if (image) image.src = './assets/images/beverages/caramel-macchiato.svg';
+        if (image) image.src = './assets/images/beverages/caramel-macchiato.png';
         if (title) title.textContent = 'Caramel Macchiato';
         if (description) description.innerHTML = 'Dark smoky arabica espresso shots with<br>fresh milk, finished with caramel drizzle<br>and Madagascar vanilla syrup. Signature.';
         if (tierBadge) {
             tierBadge.textContent = 'Luxury';
             tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-purple-100 to-purple-200 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-700 dark:text-purple-400 rounded-full text-xs font-bold uppercase tracking-wider';
         }
-        if (imageMobile) imageMobile.src = './assets/images/beverages/caramel-macchiato.svg';
+        if (imageMobile) imageMobile.src = './assets/images/beverages/caramel-macchiato.png';
         if (titleMobile) titleMobile.textContent = 'Caramel Macchiato';
         if (descriptionMobile) descriptionMobile.innerHTML = 'Dark smoky arabica espresso shots with<br>fresh milk, finished with caramel drizzle<br>and Madagascar vanilla syrup. Signature.';
         if (tierBadgeMobile) {
@@ -208,14 +208,14 @@ document.querySelectorAll('.beverage-card').forEach(card => {
         const descriptionMobile = card.querySelector('#chocolate-description-mobile');
         const tierBadgeMobile = card.querySelector('#chocolate-tier-badge-mobile');
         
-        if (image) image.src = './assets/images/beverages/belgian-chocolate.svg';
+        if (image) image.src = './assets/images/beverages/nickies-chocolate.png';
         if (title) title.textContent = 'Belgian Chocolate';
         if (description) description.innerHTML = 'European dark-red cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Most beloved.';
         if (tierBadge) {
             tierBadge.textContent = 'Premium';
             tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-amber-100 to-amber-200 dark:from-amber-900/30 dark:to-amber-800/30 text-amber-700 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wider';
         }
-        if (imageMobile) imageMobile.src = './assets/images/beverages/belgian-chocolate.svg';
+        if (imageMobile) imageMobile.src = './assets/images/beverages/nickies-chocolate.png';
         if (titleMobile) titleMobile.textContent = 'Belgian Chocolate';
         if (descriptionMobile) descriptionMobile.innerHTML = 'European dark-red cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Most beloved.';
         if (tierBadgeMobile) {
