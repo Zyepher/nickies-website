@@ -103,7 +103,7 @@ tierBtns.forEach(btn => {
                 case 'standard':
                         image.src = './assets/images/beverages/nickies-chocolate.png';
                         title.textContent = 'Dutch Chocolate';
-                        description.innerHTML = 'Creamy Dutched cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Real chocolate.';
+                        description.innerHTML = 'Smooth dutched cocoa with fresh milk,<br>finished with salted caramel drizzle and<br>Madagascar vanilla syrup. Real chocolate.';
                         tierBadge.textContent = 'Standard';
                         tierBadge.className = 'inline-block px-3 py-1 bg-gradient-to-r from-stone-100 to-stone-200 dark:from-stone-800 dark:to-stone-700 text-stone-700 dark:text-stone-300 rounded-full text-xs font-bold uppercase tracking-wider';
                         break;
